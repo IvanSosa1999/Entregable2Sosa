@@ -1,5 +1,3 @@
-
-
 body{
     background-color: rgb(32, 35, 36);
    font-family:'Nunito', sans-serif;
@@ -101,6 +99,7 @@ p{
 }
 
 .redes {  
+    display: flex;
     color: rgb(1, 246, 3);
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
@@ -174,4 +173,10 @@ position: relative;
 .parrafo{
     position: relative;
 }
+.Mapa{
+    width: 100%;
+}
 
+footer{
+    display: flex;
+}

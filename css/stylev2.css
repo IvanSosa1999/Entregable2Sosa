@@ -1,0 +1,166 @@
+body {
+  background-color: rgb(32, 35, 36);
+  font-family: "Nunito", sans-serif;
+  font-size: 2rem;
+}
+body header {
+  width: 100%;
+}
+body header nav {
+  background-color: rgb(14, 15, 15);
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.Categorias {
+  text-decoration: none;
+  color: rgb(0, 245, 0);
+  font-family: "Nunito", sans-serif;
+  font-size: 160%;
+  width: 100%;
+  padding: 0 20px;
+}
+.Categorias #categorias ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+.Categorias #categorias ul:visited {
+  color: rgb(0, 0, 255);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 245, 0);
+}
+
+ul {
+  list-style: none;
+}
+ul:visited {
+  color: rgb(0, 0, 255);
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+h1 {
+  color: rgb(0, 245, 0);
+  font-family: "Nunito", sans-serif;
+  font-size: 10px;
+  height: 10x;
+}
+
+h3 {
+  color: rgb(0, 245, 0);
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
+  height: 90px;
+}
+
+.Ubicacion {
+  color: rgb(0, 0, 0);
+  display: flex;
+  width: 100%;
+  background-color: rgb(0, 245, 0);
+  font-family: "Nunito", sans-serif;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.envio {
+  color: rgb(0, 0, 0);
+  display: flex;
+  width: 100%;
+  background-color: rgb(0, 245, 0);
+  font-family: "Nunito", sans-serif;
+  justify-content: center;
+  text-decoration: none;
+}
+
+h2 {
+  color: rgb(0, 245, 0);
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
+  height: 90px;
+}
+
+p {
+  color: rgb(0, 0, 0);
+}
+p .redes {
+  display: flex;
+  color: rgb(0, 245, 0);
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  height: 45px;
+}
+
+.producto img {
+  width: 500px;
+  max-height: 500px;
+}
+
+.ListaDeProductos {
+  display: flex;
+  position: relative;
+}
+.ListaDeProductos .producto {
+  max-height: 300px;
+}
+.ListaDeProductos .main {
+  position: relative;
+}
+.ListaDeProductos .main .grid-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 100px);
+  row-gap: 10px;
+  column-gap: 10px;
+  height: 450px;
+}
+.ListaDeProductos .main .grid-container .grid-item {
+  font-size: 21px;
+  padding: 5px;
+}
+.ListaDeProductos .main .grid-container img {
+  width: 90%;
+  height: 100%;
+}
+.ListaDeProductos .main .grid-container .uno {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+.ListaDeProductos .main .grid-container .dos {
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+.ListaDeProductos .main .grid-container .tres {
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+.ListaDeProductos .main .grid-container .cuatro {
+  grid-column: 4/5;
+  grid-row: 1/4;
+}
+.ListaDeProductos .main .parrafo {
+  position: relative;
+}
+.ListaDeProductos footer {
+  display: flex;
+}
+
+.Mapa {
+  width: 100%;
+  height: 500px;
+}
+
+/*# sourceMappingURL=stylev2.css.map */

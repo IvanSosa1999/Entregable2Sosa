@@ -1,0 +1,207 @@
+@mixin background($color) {
+    background-color: $color;
+  }
+  
+  @mixin text-color($color) {
+    color: $color;
+  }
+
+  
+  @mixin font-size($size) {
+    font-size: $size;
+  }
+  
+  // Colores v2
+  $green-apple: rgb(0, 245, 0);
+  $dark-grey: rgb(32, 35, 36);
+  $dark-grey-logo: rgb(14, 15, 15);
+  $black: rgb(0, 0, 0);
+  $blue: rgb(0, 0, 255);
+  
+  body {
+    @include background($dark-grey);
+    font-family:'Nunito', sans-serif;
+    @include font-size(2rem);
+  
+    header {
+      width: 100%;
+  
+      nav {
+        @include background($dark-grey-logo);
+        width: 100%;
+        display: flex;
+        position: relative;
+      }
+    }
+  }
+  
+  .Categorias {
+    text-decoration: none;
+    @include text-color($green-apple);
+    font-family:'Nunito', sans-serif;
+    @include font-size(160%);
+    width: 100%;
+    padding: 0 20px;
+  
+    #categorias {
+      ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        padding: 0 20px;
+        justify-content: space-between;
+  
+        &:visited {
+          color: $blue;
+        }
+      }
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    @include text-color($green-apple);
+  }
+  
+  ul {
+    list-style: none;
+  
+    &:visited {
+      color: $blue;
+    }
+  }
+  
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  h1 {
+    @include text-color($green-apple);
+    font-family:'Nunito', sans-serif;
+    font-size: 10px;
+    height: 10x;
+  }
+  
+  h3 {
+    @include text-color($green-apple);
+    font-family:'Nunito', sans-serif;
+    font-size: 40px;
+    height: 90px;
+  }
+  
+  .Ubicacion {
+    @include text-color($black);
+    display: flex;
+    width: 100%;
+    @include background($green-apple);
+    font-family:'Nunito', sans-serif;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .envio {
+    @include text-color($black);
+    display: flex;
+    width: 100%;
+    @include background($green-apple);
+    font-family:'Nunito', sans-serif;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  h2 {
+    @include text-color($green-apple);
+    font-family:'Nunito', sans-serif;
+    font-size: 40px;
+    height: 90px;
+  }
+  
+  p {
+    @include text-color($black);
+  
+    .redes {
+      display: flex;
+      @include text-color($green-apple);
+      font-family:'Nunito', sans-serif;
+      font-size: 20px;
+      height: 45px;
+    }
+  }
+  
+  .producto img {
+    width: 500px;
+    max-height: 500px;
+  }
+  
+  // ESTO ES EL MAIN
+  .ListaDeProductos {
+    display: flex;
+    position: relative;
+  
+    .producto {
+      max-height: 300px;
+    }
+  
+    .main {
+      position: relative;
+  
+      .grid-container {
+        position: relative;
+        display: grid;
+        // AUTO COMO UNIDAD DE MEDIDA
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 100px);
+        // ROW Y COLUMN GAP PARA ESPACIADO
+        row-gap: 10px;
+        column-gap: 10px;
+        height: 450px;
+  
+        .grid-item {
+          font-size: 21px;
+          padding: 5px;
+        }
+  
+        // ESTO ES PARA QUE TODAS LAS FOTOS TENGAN LAS MISMAS MEDIDAS
+        img {
+          width: 90%;
+          height: 100%;
+        }
+  
+        .uno {
+          grid-column: 1 / 2;
+          grid-row: 1 / 4;
+        }
+  
+        .dos {
+          grid-column: 2 / 3;
+          grid-row: 1 / 4;
+        }
+  
+        .tres {
+          grid-column: 3 / 4;
+          grid-row: 1 / 4;
+        }
+  
+        .cuatro {
+          grid-column: 4 / 5;
+          grid-row: 1 / 4;
+        }
+      }
+  
+      .parrafo {
+        position: relative;
+      }
+    }
+  
+    footer {
+      display: flex;
+    }
+  }
+  
+  .Mapa {
+    width: 100%;
+    height: 500px;
+  }

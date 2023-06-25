@@ -1,6 +1,8 @@
+@import 'body';
+
 @mixin background($color) {
-    background-color: $color;
-  }
+  background-color: $color;
+}
   
   @mixin text-color($color) {
     color: $color;
@@ -17,24 +19,12 @@
   $dark-grey-logo: rgb(14, 15, 15);
   $black: rgb(0, 0, 0);
   $blue: rgb(0, 0, 255);
-  
-  body {
-    @include background($dark-grey);
-    font-family:'Nunito', sans-serif;
-    @include font-size(2rem);
-  
-    header {
-      width: 100%;
-  
-      nav {
-        @include background($dark-grey-logo);
-        width: 100%;
-        display: flex;
-        position: relative;
-      }
-    }
+
+  @media (max-width:768px){
+    .grid-container {
+          grid-template-rows: repeat(2, 100px);
+         }
   }
-  
   .Categorias {
     text-decoration: none;
     @include text-color($green-apple);
@@ -204,4 +194,17 @@
   .Mapa {
     width: 100%;
     height: 500px;
+  }
+
+  .tituloLogo h1 .text-sia{ 
+    color: rgb(0, 245, 0);
+  }
+  .tituloLogo h1 .text-motos{ 
+    color: rgb(0, 0, 0);
+  }
+  .tituloLogo{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }

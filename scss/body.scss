@@ -1,0 +1,26 @@
+@mixin background($color) {
+  background-color: $color;
+}
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+$dark-grey: rgb(32, 35, 36);
+$dark-grey-logo: rgb(14, 15, 15);
+
+body {
+    @include background($dark-grey);
+    font-family:'Nunito', sans-serif;
+    @include font-size(2rem);
+  
+    header {
+      width: 100%;
+  
+      nav {
+        @include background($dark-grey-logo);
+        width: 100%;
+        display: flex;
+        position: relative;
+      }
+    }
+  }

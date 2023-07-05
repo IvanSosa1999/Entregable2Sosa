@@ -13,26 +13,6 @@ body header nav {
   position: relative;
 }
 
-.card-group .card{
-  max-width: 300px;
-}
-
-@media (max-width:768px){
-  .grid-section{
-    grid-template-columns: repeat(2, 1fr)!important;
-  }
-}
-
-.grid-section{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px; /* Espacio entre las tarjetas */
-  margin: 0px 10px 0px 10px;
-}
-.grid-section .cardv2{
-  border: 1px solid black;
-}
-
 .Categorias {
   text-decoration: none;
   color: rgb(0, 245, 0);
@@ -132,13 +112,14 @@ p .redes {
   display: flex;
   position: relative;
 }
+
 .ListaDeProductos .producto {
   max-height: 300px;
 }
 .ListaDeProductos .main {
   position: relative;
 }
-.ListaDeProductos .main .grid-container {
+.card-group {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -178,30 +159,21 @@ p .redes {
   display: flex;
 }
 
-.redes{
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 3%;
-}
-
 .Mapa {
   width: 100%;
   height: 500px;
 }
 
-.tituloLogo h1 .text-sia {
+.tituloLogo h1 .text-sia{ 
   color: rgb(0, 245, 0);
 }
-
-.tituloLogo h1 .text-motos {
+.tituloLogo h1 .text-motos{ 
   color: rgb(0, 0, 0);
 }
-
-.tituloLogo {
+.tituloLogo{
   display: flex;
   justify-content: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
-/*# sourceMappingURL=stylev3.css.map */
+/*# sourceMappingURL=stylev2.css.map */

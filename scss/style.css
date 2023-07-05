@@ -13,26 +13,11 @@ body header nav {
   position: relative;
 }
 
-.card-group .card{
-  max-width: 300px;
-}
-
-@media (max-width:768px){
-  .grid-section{
-    grid-template-columns: repeat(2, 1fr)!important;
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-rows: repeat(2, 100px);
   }
 }
-
-.grid-section{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px; /* Espacio entre las tarjetas */
-  margin: 0px 10px 0px 10px;
-}
-.grid-section .cardv2{
-  border: 1px solid black;
-}
-
 .Categorias {
   text-decoration: none;
   color: rgb(0, 245, 0);
@@ -144,7 +129,8 @@ p .redes {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(3, 100px);
   row-gap: 10px;
-  column-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   height: 450px;
 }
 .ListaDeProductos .main .grid-container .grid-item {
@@ -178,12 +164,6 @@ p .redes {
   display: flex;
 }
 
-.redes{
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 3%;
-}
-
 .Mapa {
   width: 100%;
   height: 500px;
@@ -202,6 +182,4 @@ p .redes {
   justify-content: center;
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-/*# sourceMappingURL=stylev3.css.map */
+}/*# sourceMappingURL=style.css.map */

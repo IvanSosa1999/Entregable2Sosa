@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(32, 35, 36);
+  font-family: "Nunito", sans-serif;
+  font-size: 2rem;
+}
+body header {
+  width: 100%;
+}
+body header nav {
+  background-color: rgb(14, 15, 15);
+  width: 100%;
+  display: flex;
+  position: relative;
+}/*# sourceMappingURL=body.css.map */

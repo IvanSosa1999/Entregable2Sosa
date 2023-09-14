@@ -24,6 +24,17 @@
 <body>
     <!-- ENCABEZADO -->
     <header>
+      <div class="containerHeader">
+        <nav class="navbar navbar-light">
+          <div class="container-fluid" style="flex-direction: row-reverse";>
+                <form class="d-flex justify-content-center">
+                    <input class="form-control me-2" id="busqueda" type="text" placeholder="Buscador" aria-label="Search" />
+                    <button class="btn btn-outline-success" id="btnFiltrar" type="button">Buscar</button>
+                </form>
+                <i class="bi bi-cart3 carrito"></i>
+            </div>
+        </nav>
+    </div>
         <nav class="navbar navbar-expand-lg bg-body-dark">
             <div class="container-fluid">
               <img src="./images/logo siamotos.jpg" alt="Logo" width="100px" height="100px">
@@ -55,41 +66,14 @@
         <div class="tituloLogo"><h1><span class="text-sia">SERVICE PARA </span><span class="text-motos">TU MOTO</span></h1></div>
       </header>
          <!-- Fin Header --> 
-         
-         <div class="grid-section">
-            <div class="cardv2">
-              <img src="images/ServiceMotoFoto/Trk.jpg" class="card-img-top" alt="KitServiceTrk502">
-              <div>
-                <h5 class="text-center m-4">Kit Service Filtros Aire Y Aceite Benelli Trk 502</h5>
-                <p class="text-center m-4">kit de service para moto benelli trk 502,filtro de aceite: marca vedamotors,filtro de aire: marca wega</p>
-                <p class="text-center"><strong>$6.280</strong></p>
-              </div>
-            </div>
-            <div class="cardv2">
-              <img src="images/ServiceMotoFoto/Tornado.jpg" class="card-img-top" alt="KitServiceXr250Tornado">
-              <div>
-                <h5 class="text-center m-4">Kit Service Xr 250 Tornado Aceite Honda Hgo + Filtros</h5>
-                <p class="text-center m-4">kit de service para moto xr 250 tornado, aceite: honda hgo 10w30,filtro de aceite y aire: marca wega</p>
-                <p class="text-center"><strong>$7.400</strong></p>
-              </div>
-            </div>
-            <div class="cardv2">
-                <img src="images/ServiceMotoFoto/Raptor.jpg" class="card-img-top" alt="KitServiceYamahaRaptor">
-                <div>
-                  <h5 class="text-center m-4">Kit Service Yamaha Raptor 700 Aceite Yamalube + Filtro</h5>
-                  <p class="text-center m-4">kit service yamaha raptor 700, aceite yamalube semisintetico 10w40, filtro de aceite marca wega</p>
-                  <p class="text-center"><strong>$7.850</strong></p>
-                </div>
-            </div>
-            <div class="cardv2">
-                <img src="images/ServiceMotoFoto/NinjaZx10.jpg" class="card-img-top" alt="KitServiceKawaZx6">
-                <div>
-                  <h5 class="text-center m-4">Kit Service Kawa Zx6 R Zx9 R Zx10 R Filtro Wander 15w50</h5>
-                  <p class="text-center m-4">kit de service, wander semi sintetico 15w50, filtro de aceite: marca kawasaki original</p>
-                  <p class="text-center"><strong>$21.905</strong></p>
-                </div>
-            </div>
-          </div>
+         <div class="grid-section" id="contenedor-services">
+        </div>
+        </header>
+          <main>
+            <div id="contenedor"></div>
+            <div id="carrito"></div>
+            <div id="acciones-carrito"></div>
+        </main>
         
         <!-- PIE DE PAGINA -->
         <!-- Footer -->
@@ -101,7 +85,18 @@
                 </div>
             </footer>
             <!-- Footer -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+            <script src="js/Service.js"></script>
+            <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+<!-- Sweet alert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- Toastify -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastify-js/1.11.2/toastify-es.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  crossorigin="anonymous"></script>
         </body>
 </body>
 </html>

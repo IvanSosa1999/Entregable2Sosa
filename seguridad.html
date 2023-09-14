@@ -24,6 +24,17 @@
 <body>
     <!-- ENCABEZADO -->
     <header>
+      <div class="containerHeader">
+        <nav class="navbar navbar-light">
+          <div class="container-fluid" style="flex-direction: row-reverse";>
+                <form class="d-flex justify-content-center">
+                    <input class="form-control me-2" id="busqueda" type="text" placeholder="Buscador" aria-label="Search" />
+                    <button class="btn btn-outline-success" id="btnFiltrar" type="button">Buscar</button>
+                </form>
+                <i class="bi bi-cart3 carrito"></i>
+            </div>
+        </nav>
+    </div>
         <nav class="navbar navbar-expand-lg bg-body-dark">
             <div class="container-fluid">
               <img src="./images/logo siamotos.jpg" alt="Logo" width="100px" height="100px">
@@ -56,41 +67,14 @@
       </header>
          <!-- Fin Header --> 
          
-         <div class="grid-section">
-            <div class="cardv2">
-              <img src="images/Seguridad/CadenaCandado.jpg" class="card-img-top" alt="CadenaCementada">
-              <div>
-                <h5 class="text-center m-4">Cadena Linga 1.10 Cementada Para Moto O Bicicleta</h5>
-                <p class="text-center m-4">Cadena de 100cm con eslabones de acero cementado y templado de 10mm resistentes al corte. Recubierta en una funda protectora de tela sintética de alta resistencia</p>
-                <p class="text-center"><strong>$5.500</strong></p>
-              </div>
-            </div>
-            <div class="cardv2">
-              <img src="images/Seguridad/CascoVx.jpg" class="card-img-top" alt="CascoVertigoVx">
-              <div>
-                <h5 class="text-center m-4">Casco Bicicleta Skate Rollers Vertigo Vx Free Style</h5>
-                <p class="text-center m-4">El complemento necesario para tus actividades
-                  Este casco te dará comodidad y seguridad para que puedas disfrutar de las actividades que más te gustan sin preocupaciones.</p>
-                <p class="text-center"><strong>$7.700</strong></p>
-              </div>
-            </div>
-            <div class="cardv2">
-                <img src="images/Seguridad/Chaleco.jpg" class="card-img-top" alt="ChalecoReflectivoMac">
-                <div>
-                  <h5 class="text-center m-4">Chaleco Reflectivo Fluo Seguridad Auto Moto Mac By Ls2</h5>
-                  <p class="text-center m-4">amarillo fluorescente con banda reflectante sin ángulo de 360 grados lo mantiene seguro mientras en bicicleta o camina y noche. </p>
-                  <p class="text-center"><strong>$3.790</strong></p>
-                </div>
-            </div>
-            <div class="cardv2">
-                <img src="images/Seguridad/TrabaDisco.jpg" class="card-img-top" alt="TrabaDiscoConAlarma">
-                <div>
-                  <h5 class="text-center m-4">Traba Disco Con Alarma 110db Candado Moto Bici Reforzado</h5>
-                  <p class="text-center m-4">Candado con Alarma Traba Disco de freno. Desarrollado en aleación de acero de alta resistencia, ultra Resistente.</p>
-                  <p class="text-center"><strong>$10.640</strong></p>
-                </div>
-            </div>
+         <div class="grid-section" id="contenedor-seguridades">
           </div>
+          <main>
+            <div id="contenedor"></div>
+            <div id="carrito"></div>
+            <div id="acciones-carrito"></div>
+        </main>
+
         
         <!-- PIE DE PAGINA -->
         <!-- Footer -->
@@ -102,7 +86,18 @@
           </div>
       </footer>
             <!-- Footer -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+            <script src="js/Seguridad.js"></script>
+            <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+<!-- Sweet alert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- Toastify -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastify-js/1.11.2/toastify-es.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  crossorigin="anonymous"></script>
         </body>
 </body>
 </html>

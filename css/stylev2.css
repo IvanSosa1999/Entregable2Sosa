@@ -177,3 +177,30 @@ p .redes {
   padding-bottom: 30px;
 }
 /*# sourceMappingURL=stylev2.css.map */
+
+.contenedor {
+  display: flex;
+  flex-direction: row; /* Por defecto, es una fila, pero se incluye aquí para claridad */
+  justify-content: space-between;
+  align-items: flex-start; /* Alinea el buscador en la parte superior */
+  padding: 10px; /* Añade espaciado para separar el contenido del borde */
+}
+
+.buscador {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+input[type="text"] {
+  padding: 5px;
+  margin-right: 5px; /* Añade espacio entre el campo de búsqueda y el botón */
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #007bff; /* Cambia el color de fondo según tus preferencias */
+  color: #fff; /* Cambia el color del texto según tus preferencias */
+  border: none;
+  cursor: pointer;
+}

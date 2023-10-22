@@ -22,28 +22,28 @@ class Producto {
 
 const Cascos = [
     {
-        id: 0,
+        id: 4,
         marca: "Nzi Trendy",
         descripcion: "Casco integral con un diseño de carcasa rabiosamente deportivo y la garantía de NZI en lo que se refiere a seguridad y confort.",
         precio: 40960,
         img: "images/Cascos/NziTrendy.jpg",
     },
     {
-        id: 1,
+        id: 5,
         marca: "Nzi Knobby",
         descripcion: "casco nzi knobby enduro cross | temporada 2022 Motocross, estilo libre,el modelo Knobby esta preparado para cualquier actividad fuera de carretera.",
         precio: 47190,
         img: "images/Cascos/NziKnobby.jpg",
     },
     {
-        id: 2,
+        id: 6,
         marca: "Mac Virtus",
         descripcion: "Llega mac virtus.Para vos, que ves el mundo de otra manera, que te cuidás no porque te lo dicen sino porque tenés otra cabeza.",
         precio: 49190,
         img: "images/Cascos/MacVirtus.jpg",
     },
     {
-        id: 3,
+        id: 7,
         marca: "MacBeatSolid",
         descripcion: "El casco más Compacto y Liviano. La ligereza y la protección se combinan en la nueva propuesta de casco abierto MAC.",
         precio: 31090,
@@ -78,15 +78,12 @@ function imprimirProductosEnHTML(Cascos) {
         let card = document.createElement("div");
         card.innerHTML = `
         <div class="cardv2">
-        <img src="${Casco.img}" class="card-img-top" alt="${Casco.marca}">
         <div>
-          <h5 class="text-center m-4">${Casco.marca}</h5>
+        <img src="${Casco.img}" class="card-img-top imagenProducto" alt="${Casco.marca}">        
+          <h5 class="text-center m-4 nombre">${Casco.marca}</h5>
           <p class="text-center m-4">${Casco.descripcion}</p>
-          <p class="text-center"><strong>$${Casco.precio}</strong></p>
-        </div>
-        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                         <button id="agregar${Casco.id}" type="button" class="btn btn-dark"> Agregar </button>
-                     </div>
+          <p class="text-center precio">$${Casco.precio}</p>
+          <button id="agregar${Casco.id}" type="button" class="btn btn-dark agregar-carrito"> Agregar </button>
       </div>
         `;
 

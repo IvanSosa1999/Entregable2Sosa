@@ -1,0 +1,138 @@
+{
+    "aceite": [
+        {
+            "id":"0",
+            "nombre": "Aceite YPF mineral Elaion Moto 4T 20W-50",
+            "precio":"1690",
+            "stock":"",
+            "img":"images/Aceites/ElaionMineral.jpg",
+            "descripcion":"Aceite YPF Elaion Moto 4T 20W-50 Mineral,Lubricante formulado con bases minerales de alta refinación."
+        },
+        {
+            "id":"",
+            "nombre": "Aceite Semi Sintetico Yamalube 4t 10w40",
+            "precio":"2675",
+            "stock":"",
+            "img":"images/Aceites/YamalubeSemi.jpg",
+            "descripcion":"Aceite Semi Sintetico Yamalube 4t 10w40, Lubricante formulado con bases semissinteticas."
+        },
+        {
+            "id":"",
+            "nombre": "Aceite Lubricante Ipone M4 Mineral 20w50",
+            "precio":"3650",
+            "stock":"",
+            "img":"images/Aceites/IponeM4.jpg",
+            "descripcion":"M4 es de alta calidad para motores de 4 tiempos que garantiza la completa lubricación y protección de su motor"
+        },
+        {
+            "id":"",
+            "nombre": "Aceite 2t 100% Sintetico Fuchs Silkolene",
+            "precio":"5255",
+            "stock":"",
+            "img":"images/Aceites/SilkoleneSintetico2T.jpg",
+            "descripcion":"Full Sintético ESTER, fabricados con Tecnologia Electrosyntec©, Exclusiva Tecnología de Aditivos"
+        }
+    ],
+    "casco": [
+        {
+            "id":"",
+            "nombre": "Nzi Trendy",
+            "precio":"40960",
+            "stock":"",
+            "img":"images/Cascos/NziTrendy.jpg",
+            "descripcion":"Casco integral con un diseño de carcasa rabiosamente deportivo y la garantía de NZI en lo que se refiere a seguridad y confort."
+        },
+        {
+            "id":"",
+            "nombre": "Nzi Knobby",
+            "precio":"47190",
+            "stock":"",
+            "img":"images/Cascos/NziKnobby.jpg",
+            "descripcion":"casco nzi knobby enduro cross | temporada 2022 Motocross, estilo libre,el modelo Knobby esta preparado para cualquier actividad fuera de carretera."
+        },
+        {
+            "id":"",
+            "nombre": "Mac Virtus",
+            "precio":"49190",
+            "stock":"",
+            "img":"images/Cascos/MacVirtus.jpg",
+            "descripcion":"Llega mac virtus.Para vos, que ves el mundo de otra manera, que te cuidás no porque te lo dicen sino porque tenés otra cabeza."
+        },
+        {
+            "id":"",
+            "nombre": "MacBeatSolid",
+            "precio":"31090",
+            "stock":"",
+            "img":"images/Cascos/MacBeatSolid.jpg",
+            "descripcion":"El casco más Compacto y Liviano. La ligereza y la protección se combinan en la nueva propuesta de casco abierto MAC."
+        }
+    ],
+    "seguridad": [
+        {
+            "id":"",
+            "nombre":"Cadena Linga 1.10 Cementada Para Moto O Bicicleta",
+            "precio":"5500",
+            "stock":"",
+            "img":"images/Seguridad/CadenaCandado.jpg",
+            "descripcion":"Cadena de 100cm con eslabones de acero cementado y templado de 10mm resistentes al corte. "
+        },
+        {
+            "id":"",
+            "nombre":  "Casco Bicicleta Skate Rollers Vertigo Vx Free Style",
+            "precio":"7700",
+            "stock":"",
+            "img":"images/Seguridad/CascoVx.jpg",
+            "descripcion":"El complemento necesario para tus actividades.Este casco te dará comodidad y seguridad."
+        },
+        {
+            "id":"",
+            "nombre": "Chaleco Reflectivo Fluo Seguridad Auto Moto Mac By Ls2",
+            "precio":"3790",
+            "stock":"",
+            "img":"images/Seguridad/Chaleco.jpg",
+            "descripcion":"amarillo fluorescente con banda reflectante sin ángulo de 360 grados lo mantiene seguro."
+        },
+        {
+            "id":"",
+            "nombre":"Traba Disco Con Alarma 110db Candado Moto Bici Reforzado",
+            "precio":"10640",
+            "stock":"",
+            "img":"images/Seguridad/TrabaDisco.jpg",
+            "descripcion":"Candado con Alarma Traba Disco de freno. Desarrollado en aleación de acero de alta resistencia, ultra Resistente."
+        }
+    ],
+    "service": [
+        {
+            "id":"",
+            "nombre":"Kit Service Filtros Aire Y Aceite Benelli Trk 502 Trk502 ",
+            "precio":"6280",
+            "stock":"",
+            "img":"images/ServiceMotoFoto/Trk.jpg",
+            "descripcion": "kit de service para moto benelli trk 502,filtro de aceite: marca vedamotors,filtro de aire: marca wega"
+        },
+        {
+            "id":"",
+            "nombre":"Kit Service Xr 250 Tornado Aceite Honda Hgo + Filtros",
+            "precio":"7400",
+            "stock":"",
+            "img":"images/ServiceMotoFoto/Tornado.jpg",
+            "descripcion":"kit de service para moto xr 250 tornado, aceite: honda hgo 10w30,filtro de aceite y aire: marca wega"
+        },
+        {
+            "id":"",
+            "nombre": "Kit Service Yamaha Raptor 700 Aceite Yamalube + Filtro",
+            "precio":"7850",
+            "stock":"",
+            "img":"images/ServiceMotoFoto/Raptor.jpg",
+            "descripcion":"kit service yamaha raptor 700, aceite yamalube semisintetico 10w40, filtro de aceite marca wega"
+        },
+        {
+            "id":"",
+            "nombre": "Kit Service Kawa Zx6 R Zx9 R Zx10 R Filtro Wander 15w50",
+            "precio":"21905",
+            "stock":"",
+            "img":"images/ServiceMotoFoto/NinjaZx10.jpg",
+            "descripcion":"kit de service, wander semi sintetico 15w50, filtro de aceite: marca kawasaki original"
+        }
+    ]
+}

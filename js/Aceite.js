@@ -80,14 +80,12 @@ function imprimirProductosEnHTML(Aceites) {
         <div class="cardv2">
         <img src="${Aceite.img}" class="card-img-top" alt="${Aceite.marca}">
         <div>
-          <h5 class="text-center m-4">${Aceite.marca}</h5>
+          <h5 class="text-center m-4 nombre">${Aceite.marca}</h5>
           <p class="text-center m-4">${Aceite.descripcion}</p>
-          <p class="text-center"><strong>$${Aceite.precio}</strong></p>
+          <p class="text-center precio">$${Aceite.precio}</p>
+          <button id="agregar${Aceite.id}" type="button" class="btn btn-dark agregar-carrito"> Agregar </button>
+            </div>
         </div>
-        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                         <button id="agregar${Aceite.id}" type="button" class="btn btn-dark"> Agregar </button>
-                     </div>
-      </div>
         `;
 
         contenedor.appendChild(card);

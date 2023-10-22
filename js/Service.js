@@ -29,21 +29,21 @@ const Services = [
         img: "images/ServiceMotoFoto/Trk.jpg",
     },
     {
-        id: 1,
+        id: 12,
         marca: "Kit Service Xr 250 Tornado Aceite Honda Hgo + Filtros",
         descripcion: "kit de service para moto xr 250 tornado, aceite: honda hgo 10w30,filtro de aceite y aire: marca wega",
         precio: 7400,
         img: "images/ServiceMotoFoto/Tornado.jpg",
     },
     {
-        id: 2,
+        id: 13,
         marca: "Kit Service Yamaha Raptor 700 Aceite Yamalube + Filtro",
         descripcion: "kit service yamaha raptor 700, aceite yamalube semisintetico 10w40, filtro de aceite marca wega",
         precio: 7850,
         img: "images/ServiceMotoFoto/Raptor.jpg",
     },
     {
-        id: 3,
+        id: 14,
         marca: "Kit Service Kawa Zx6 R Zx9 R Zx10 R Filtro Wander 15w50",
         descripcion: "kit de service, wander semi sintetico 15w50, filtro de aceite: marca kawasaki original",
         precio: 21905,
@@ -80,13 +80,10 @@ function imprimirProductosEnHTML(Services) {
         <div class="cardv2">
         <img src="${Service.img}" class="card-img-top" alt="${Service.marca}">
         <div>
-          <h5 class="text-center m-4">${Service.marca}</h5>
+          <h5 class="text-center m-4 nombre">${Service.marca}</h5>
           <p class="text-center m-4">${Service.descripcion}</p>
-          <p class="text-center"><strong>$${Service.precio}</strong></p>
-        </div>
-        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                         <button id="agregar${Service.id}" type="button" class="btn btn-dark"> Agregar </button>
-                     </div>
+          <p class="text-center precio">$${Service.precio}</p>
+          <button id="agregar${Service.id}" type="button" class="btn btn-dark agregar-carrito"> Agregar </button>
       </div>
         `;
 

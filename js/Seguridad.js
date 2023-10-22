@@ -22,28 +22,28 @@ class Producto {
 
 const Seguridades = [
     {
-        id: 0,
+        id: 8,
         marca: "Cadena Linga 1.10 Cementada Para Moto O Bicicleta",
         descripcion: "Cadena de 100cm con eslabones de acero cementado y templado de 10mm resistentes al corte. ",
         precio: 5500,
         img: "images/Seguridad/CadenaCandado.jpg",
     },
     {
-        id: 1,
+        id: 9,
         marca: "Casco Bicicleta Skate Rollers Vertigo Vx Free Style",
         descripcion: "El complemento necesario para tus actividades.Este casco te dará comodidad y seguridad.",
         precio: 7700,
         img: "images/Seguridad/CascoVx.jpg",
     },
     {
-        id: 2,
+        id: 10,
         marca: "Chaleco Reflectivo Fluo Seguridad Auto Moto Mac By Ls2",
         descripcion: "amarillo fluorescente con banda reflectante sin ángulo de 360 grados lo mantiene seguro.",
         precio: 3790,
         img: "images/Seguridad/Chaleco.jpg",
     },
     {
-        id: 3,
+        id: 11,
         marca: "Traba Disco Con Alarma 110db Candado Moto Bici Reforzado",
         descripcion: "Candado con Alarma Traba Disco de freno. Desarrollado en aleación de acero de alta resistencia, ultra Resistente.",
         precio: 10640,
@@ -80,13 +80,10 @@ function imprimirProductosEnHTML(Seguridades) {
         <div class="cardv2">
         <img src="${Seguridad.img}" class="card-img-top" alt="${Seguridad.marca}">
         <div>
-          <h5 class="text-center m-4">${Seguridad.marca}</h5>
+          <h5 class="text-center m-4 nombre">${Seguridad.marca}</h5>
           <p class="text-center m-4">${Seguridad.descripcion}</p>
-          <p class="text-center"><strong>$${Seguridad.precio}</strong></p>
-        </div>
-        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                         <button id="agregar${Seguridad.id}" type="button" class="btn btn-dark"> Agregar </button>
-                     </div>
+          <p class="text-center precio">$${Seguridad.precio}</p>       
+          <button id="agregar${Seguridad.id}" type="button" class="btn btn-dark agregar-carrito"> Agregar </button>
       </div>
         `;
 
